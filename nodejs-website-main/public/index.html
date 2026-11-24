@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Node Site</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+    button { padding: 8px 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>My Node.js website</h1>
+  <button id="btn">Call the API</button>
+  <p id="out"></p>
+  <script>
+    document.getElementById('btn').onclick = async () => {
+      const res = await fetch('/api/hello');
+      const data = await res.json();
+      document.getElementById('out').textContent = data.message;
+    };
+  </script>
+</body>
+</html>

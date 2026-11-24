@@ -1,0 +1,17 @@
+{
+  "name": "my-node-site",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "description": "This is a sample basic Node.js website using plain HTML files and the built in http and fs modules.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
